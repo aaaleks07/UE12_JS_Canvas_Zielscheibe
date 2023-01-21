@@ -1,11 +1,93 @@
 /***
+    -----------------------------------------------
+    STYLE OF WEBSITE
+    Structure of Website begins on Line 82 (Title)
+    -----------------------------------------------
+ */
+@font-face {
+    font-family: Roboto-Light;
+    src: url("../Fonts/Roboto-Light.ttf");
+}
+
+body{
+    background-color: #BBBBBB;
+    font-family: "Roboto-Light", serif;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+li{
+    list-style-type: none;
+}
+
+#app{
+    margin: auto;
+}
+
+canvas{
+    display: flex;
+    text-align: center;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+#p-explanation{
+    font-size: 20px;
+    margin: 0 25px 0 25px;
+}
+
+#ul-points{
+    font-size: 20px;
+}
+
+#li-points-red{
+    color: #FC4445;
+}
+
+#li-points-blue{
+    color: #4056A1;
+}
+
+#li-points-green{
+    color: #6DEC95;
+}
+
+#li-points-black{
+    color: #282828;
+}
+
+#trophies{
+    text-align: center;
+}
+
+#trophiesplace{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+abbr{
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    width: fit-content;
+
+    font-size: 22px;
+    text-decoration: none !important;
+}
+
+
+
+/***
     STRUCTURE OF WEBSITE
  */
 
 #maindiv{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto auto;
     justify-content: center;
 }
 
@@ -20,12 +102,17 @@ h1 {
     grid-column: 2/3;
 }
 
-#explanation-and-points{
+#trophies{
     grid-row: 2/3;
     grid-column: 3/4;
+}
+
+#explanation-and-points{
+    grid-row: 2/3;
+    grid-column: 1/2;
 
     display: grid;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto;
     grid-template-columns: auto;
 }
 #explanation{
@@ -33,7 +120,6 @@ h1 {
     grid-column: 1/2;
     justify-content: center;
     text-align: center;
-    margin: 0 18px 0 18px;
 }
 
 #points{
@@ -50,10 +136,3 @@ h1 {
     justify-content: center;
     margin: auto;
 }
-
-
-
-canvas{
-    border: 1px solid black;
-}
-

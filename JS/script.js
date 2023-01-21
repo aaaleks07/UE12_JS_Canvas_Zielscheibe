@@ -1,4 +1,3 @@
-//Nikolic Aleksa
 /**
  * This code was written by Nikolic Aleksa
  * @author Nikolic Aleksa
