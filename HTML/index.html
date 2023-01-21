@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aimtrainer</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" href="../ICON/icon.png">
+</head>
+<body>
+    <div id="maindiv">
+        <h1>Aimtrainer</h1>
+        <div id="app">
+            <canvas width="800" height="600" id="canvas"></canvas>
+        </div>
+
+        <div id="explanation-and-points">
+            <div id="explanation">
+                <h2 id="h2-explanation">Explanation</h2>
+                <p id="p-explanation">
+                    Targets are generated in the field on random coordinates. You have to click into the target as fast as possible to get points. If you miss the target, it will disappear and you won't get any points and have to wait until the next target spawns.
+                </p>
+            </div>
+
+
+            <div id="points">
+                <h2 id="h2-points">Points</h2>
+                <p id="p-points">
+                <ul id="ul-points">
+                    <li>Red:&emsp;&emsp;10 Points</li><br>
+                    <li>Blue:&emsp;&ensp;&nbsp;30 Points</li>
+                    <li>Green:&emsp;60 Points</li>
+                </ul>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../JS/canvas-script.js"></script>
+</body>
+</html>

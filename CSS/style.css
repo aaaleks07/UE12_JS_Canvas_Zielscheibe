@@ -1,0 +1,59 @@
+/***
+    STRUCTURE OF WEBSITE
+ */
+
+#maindiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    grid-row: 1 / 2;
+    grid-column: 2/3;
+}
+
+#app{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+#explanation-and-points{
+    grid-row: 2/3;
+    grid-column: 3/4;
+
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
+}
+#explanation{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    justify-content: center;
+    text-align: center;
+    margin: 0 18px 0 18px;
+}
+
+#points{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    text-align: center;
+}
+
+#ul-points{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+canvas{
+    border: 1px solid black;
+}
+
